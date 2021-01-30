@@ -1,16 +1,9 @@
 
-function makeBirdCounter() {
-  var count = 0;
-return  function(){
+function makeCounter(substantivo ) {
+var count = 0;
+return function(){
     count += 1;
-    return count + 'birds';
+    return count + '' + substantivo;
   }
 }
 
-function makeDogCounter() {
-  var count = 0;
-  return function(){
-   count += 1;
-  return count + ' dogs';
-}
-}
